@@ -1,0 +1,6 @@
+@BackSistemaGestaoPlanosTelefonia_HostAddress = http://localhost:5193
+
+GET {{BackSistemaGestaoPlanosTelefonia_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackSistemaGestaoPlanosTelefonia", "BackSistemaGestaoPlanosTelefonia\BackSistemaGestaoPlanosTelefonia.csproj", "{9333D96B-0599-4402-81B5-1439CEFEBDEF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9333D96B-0599-4402-81B5-1439CEFEBDEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9333D96B-0599-4402-81B5-1439CEFEBDEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9333D96B-0599-4402-81B5-1439CEFEBDEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9333D96B-0599-4402-81B5-1439CEFEBDEF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {878A16A5-AFFF-46AE-AA34-3DD06CBD11B3}
+	EndGlobalSection
+EndGlobal
