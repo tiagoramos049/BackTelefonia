@@ -15,19 +15,17 @@ namespace BackSistemaGestaoPlanosTelefonia.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
-
             modelBuilder.Entity<ClientePlano>()
                 .HasOne(cp => cp.Cliente)
                 .WithMany(c => c.ClientePlanos)
                 .HasForeignKey(cp => cp.ClienteId)
-                .OnDelete(DeleteBehavior.Cascade); // Adicionando DeleteCascade para remover as associações corretamente
+                .OnDelete(DeleteBehavior.Cascade);  // Configurar exclusão em cascata, caso necessário
 
             modelBuilder.Entity<ClientePlano>()
                 .HasOne(cp => cp.Plano)
                 .WithMany(p => p.ClientePlanos)
                 .HasForeignKey(cp => cp.PlanoId)
-                .OnDelete(DeleteBehavior.Cascade); // Adicionando DeleteCascade para remover as associações corretamente
+                .OnDelete(DeleteBehavior.Cascade);  // Configurar exclusão em cascata, caso necessário
         }
     }
 }

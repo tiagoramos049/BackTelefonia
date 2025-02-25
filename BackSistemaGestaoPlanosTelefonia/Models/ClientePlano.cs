@@ -14,7 +14,7 @@ namespace BackSistemaGestaoPlanosTelefonia.Models
         public Cliente? Cliente { get; set; } 
         public Guid? PlanoId { get; set; }
         public PlanoTelefone? Plano { get; set; }
-        public ICollection<ClientePlano>? ClientePlanos { get; set; }
+        
     }
 }
 

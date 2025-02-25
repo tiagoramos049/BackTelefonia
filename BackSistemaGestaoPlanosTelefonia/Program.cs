@@ -16,6 +16,7 @@ builder.Services.AddDbContext<Context>(options =>
 
 builder.Services.AddScoped<IClienteService, ClienteService>();
 builder.Services.AddScoped<IPlanoDeSaudeService, PlanoDeSaudeService>();
+builder.Services.AddScoped<IDashboardService, DashboardService>();
 
 var app = builder.Build();
 

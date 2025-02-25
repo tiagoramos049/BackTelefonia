@@ -45,6 +45,11 @@ namespace BackEstoque.Controllers
                 return BadRequest(ModelState);
             }
 
+            if (cliente.ClientePlanos == null || cliente.ClientePlanos.Count == 0)
+            {
+                cliente.ClientePlanos = new List<ClientePlano>();  // Inicializa a lista vazia, caso não tenha planos.
+            }
+
             _clienteService.Add(cliente);
             return Ok(cliente);
             
