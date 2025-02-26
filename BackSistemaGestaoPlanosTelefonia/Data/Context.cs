@@ -18,14 +18,12 @@ namespace BackSistemaGestaoPlanosTelefonia.Data
             modelBuilder.Entity<ClientePlano>()
                 .HasOne(cp => cp.Cliente)
                 .WithMany(c => c.ClientePlanos)
-                .HasForeignKey(cp => cp.ClienteId)
-                .OnDelete(DeleteBehavior.Cascade);  // Configurar exclusão em cascata, caso necessário
+                .HasForeignKey(cp => cp.ClienteId);
 
             modelBuilder.Entity<ClientePlano>()
                 .HasOne(cp => cp.Plano)
                 .WithMany(p => p.ClientePlanos)
-                .HasForeignKey(cp => cp.PlanoId)
-                .OnDelete(DeleteBehavior.Cascade);  // Configurar exclusão em cascata, caso necessário
+                .HasForeignKey(cp => cp.PlanoId);
         }
     }
 }

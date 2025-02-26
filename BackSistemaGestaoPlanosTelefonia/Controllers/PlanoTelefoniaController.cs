@@ -46,20 +46,8 @@ namespace BackEstoque.Controllers
                 return BadRequest(errors); // Retorne os erros de validação
             }
 
-            if (planoDeSaude.ClientePlanos == null || planoDeSaude.ClientePlanos.Count == 0)
-            {
-                planoDeSaude.ClientePlanos = new List<ClientePlano>
-                {
-                    new ClientePlano
-                    {
-                        ClienteId = planoDeSaude.ClienteId,  // O clienteId vindo do frontend
-                        PlanoId = planoDeSaude.Id // O PlanoId já está presente
-                    }
-                };
-            }
-
             _planoDeSaudeService.Add(planoDeSaude);  // Salvar o plano no banco de dados
-            return CreatedAtAction(nameof(Get), new { id = planoDeSaude.Id }, planoDeSaude);
+            return Ok();
         }
 
 
